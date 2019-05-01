@@ -22,7 +22,7 @@ class WeatherViewModel : ViewModel() {
 
     private fun loadWeatherModel() {
         doAsync {
-            val connection = URL("https://api.darksky.net/forecast/[YOUR API KEY]/37.8267,-122.4233")
+            val connection = URL("https://api.darksky.net/forecast/[INSERT YOUR API KEY]/38.9339,77.1773")
                 .openConnection() as HttpURLConnection
             val model: WeatherModel = Gson().fromJson(
                 connection.inputStream.bufferedReader().use { it.readText() },
