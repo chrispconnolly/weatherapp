@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
+        tools:context=".DetailActivity"
         android:background="#0071bc">
 
     <ImageView
@@ -18,7 +18,7 @@
             android:layout_marginTop="40dp"/>
     <TextView
             android:id="@+id/location"
-            style="@style/TextView_XL"
+            style="@style/TextView_M"
             app:layout_constraintTop_toBottomOf="@+id/weatherIcon"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -31,21 +31,21 @@
 
     <TextView
             android:id="@+id/temperature"
-            style="@style/TextView_XXL"
+            style="@style/TextView_L"
             android:text="-8º"
             app:layout_constraintTop_toBottomOf="@+id/divider"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
     <TextView
             android:id="@+id/summary"
-            style="@style/TextView_L"
+            style="@style/TextView_M"
             android:text="Partly Cloudy"
             app:layout_constraintTop_toBottomOf="@+id/temperature"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
     <TextView
             android:id="@+id/highLow"
-            style="@style/TextView_L"
+            style="@style/TextView_M"
             app:layout_constraintTop_toBottomOf="@+id/summary"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="@+id/precipProbability"
@@ -54,7 +54,7 @@
             android:gravity="center"/>
     <TextView
             android:id="@+id/precipProbability"
-            style="@style/TextView_L"
+            style="@style/TextView_M"
             app:layout_constraintTop_toBottomOf="@+id/summary"
             app:layout_constraintLeft_toLeftOf="@+id/highLow"
             app:layout_constraintRight_toRightOf="parent"

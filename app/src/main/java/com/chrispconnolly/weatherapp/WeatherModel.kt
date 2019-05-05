@@ -1,6 +1,7 @@
 package com.chrispconnolly.weatherapp
 
 data class WeatherModel(
+    var location: String,
     val latitude: Double,
     val longitude: Double,
     val timezone: String,
